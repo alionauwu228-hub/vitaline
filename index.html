@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="container">
+        <a href="index.html" class="logo">ВитаЛайн</a>
+        <a href="catalog.html" class="catalog-btn">
+            <img src="Icon.svg" alt="">
+            Каталог
+        </a>
+        <div class="search-box">
+            <input class="search-input" type="text" placeholder="Введите название препарата..">
+            <img src="search.svg" alt="Поиск" id="search-btn">
+            <div id="search-error-badge" class="search-error">Ой! Такого товара нет в нашей аптеке :(</div>
+        </div>
+        <div class="user-actions">
+            <a href="#" id="login-btn" class="action-item">
+                <img src="user.svg" alt="">
+                <span>Войти</span>
+            </a>
+            <a href="cart.html" class="action-item" style="position: relative;">
+                <img src="cart.svg" alt="">
+                <span>Корзина</span>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="top-menu">
+        <a href="sale.html">Акции</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="#contacts">Контакты</a>
+    </div>
+    <div class="banner">
+        <img src="banner.svg" alt="Баннер ВитаЛайн">
+    </div>
+    <div class="popular">
+        <h2>Популярные товары</h2>
+    </div>
+    <div class="products">
+        <div class="product-card">
+            <img class="card" src="card.svg" alt="">
+            <a href="nurofen.html">
+                <img class="product-img nurofen-img" src="nurofen.svg" alt="Нурофен">
+            </a>
+            <a href="nurofen.html">
+                <h3 class="product-title nurofen-title">
+                    Нурофен Экспресс Форте капсулы 400 мг 20 шт
+                </h3>
+            </a>
+            <p class="product-price">358₽</p>
+            <button class="cart-btn" data-name="Нурофен" data-price="358">В корзину</button>
+        </div>
+        <div class="product-card">
+            <img class="card" src="card.svg" alt="">
+            <a href="bioderma.html">
+                <img class="product-img bioderma-img" src="bioderma.svg" alt="Bioderma">
+            </a>
+            <a href="bioderma.html">
+                <h3 class="product-title bioderma-title">
+                    Bioderma Гель-крем для тела после солнца 200 мл
+                </h3>
+            </a>
+            <p class="product-price">1690₽</p>
+            <button class="cart-btn" data-name="Bioderma" data-price="1690">В корзину</button>
+        </div>
+        <div class="product-card">
+            <img class="card" src="card.svg" alt="">
+            <a href="magneB6.html">
+                <img class="product-img magneB6-img" src="magneB6.svg" alt="Магне Б6">
+            </a>
+            <a href="magneB6.html">
+                <h3 class="product-title magneB6-title">
+                    Магне Б6 форте таблетки покрыт.плен.об. 100 мг+10 мг 100 шт
+                </h3>
+            </a>
+            <p class="product-price">1500₽</p>
+            <button class="cart-btn" data-name="Магне Б6" data-price="1500">В корзину</button>
+        </div>
+        <div class="product-card">
+            <img class="card" src="card.svg" alt="">
+            <a href="evalar.html">
+                <img class="product-img evalar-img" src="evalar.svg" alt="Мишки">
+            </a>
+            <a href="evalar.html">
+                <h3 class="product-title evalar-title">
+                    Мишки Эвалар Витамин жевательные пастилки 60 шт
+                </h3>
+            </a>
+            <p class="product-price">967₽</p>
+            <button class="cart-btn" data-name="Эвалар" data-price="967">В корзину</button>
+        </div>
+    </div>
+    <section>
+        <div class="about-block">
+            <img class="flower-icon" src="Flower.svg" alt="">
+            <h2>Почему выбирают <span class="green-text">ВитаЛайн</span>?</h2>
+        </div>
+        <p class="about-text">В <span class="green-text">«ВитаЛайн»</span> мы стремимся сделать покупку лекарственных
+            препаратов максимально удобной, безопасной и
+            доступной. Мы предлагаем широкий ассортимент сертифицированной продукции, понятный интерфейс сайта и быстрый
+            поиск необходимых товаров.</p>
+        <div class="advantages-block">
+            <div class="advantages">
+                <p>• 💊 Сертифицированные препараты</p>
+                <p>Все товары проходят обязательную сертификацию и соответствуют требованиям качества.</p>
+            </div>
+            <div class="advantages">
+                <p>• 🚚 Быстрая доставка</p>
+                <p> Оперативная обработка заказов и удобные способы получения товаров.</p>
+            </div>
+            <div class="advantages">
+                <p>• 👩‍️🩺 Поддержка специалистов</p>
+                <p>При необходимости пользователи могут получить консультацию по вопросам оформления заказа и наличия
+                    товаров.</p>
+            </div>
+            <div class="advantages">
+                <p>• 🔒 Безопасность данных и платежей</p>
+                <p> Персональные данные пользователей и информация о платежах надёжно защищены. Все операции выполняются
+                    с
+                    использованием современных технологий безопасности, что обеспечивает конфиденциальность и безопасную
+                    оплату заказов.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="contacts">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4 class="footer-title">Покупателям</h4>
+                <a href="catalog.html">Каталог</a>
+                <a href="sale.html">Акции</a>
+                <a href="delivery.html">Доставка</a>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-title">Помощь</h4>
+                <a href="#contacts">Контакты</a>
+                <a href="policy.html">Политика конфиденциальности</a>
+                <a href="policy.html">Пользовательское соглашение</a>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Контакты</h4>
+                <p>+7 (999) 999-000</p>
+                <p>info@vitaline.ru</p>
+                <p>г. Киров, ул. Московская 136</p>
+            </div>
+        </div>
+        <p class="copyright">
+            © 2026 ВитаЛайн. Все права защищены.
+        </p>
+    </footer>
+    <div class="login-modal" id="login-modal">
+        <div class="login-window">
+            <button class="close-btn" id="close-btn">×</button>
+            <h2>Вход или регистрация</h2>
+            <input type="text" placeholder="Телефон">
+            <label class="checkbox-block">
+                <input type="checkbox">
+                Даю согласие на обработку персональных данных
+            </label>
+            <label class="checkbox-block">
+                <input type="checkbox">
+                Ознакомлен и соглашаюсь с политикой обработки персональных данных,политикой конфиденциальности и пользовательским соглашением
+            </label>
+            <button class="login-btn">
+                Войти
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="container">
+        <a href="index.html" class="logo">ВитаЛайн</a>
+        <a href="catalog.html" class="catalog-btn">
+            <img src="Icon.svg" alt="">
+            Каталог
+        </a>
+        <div class="search-box">
+            <input class="search-input" type="text" placeholder="Введите название препарата..">
+            <img src="search.svg" alt="Поиск" id="search-btn">
+            <div id="search-error-badge" class="search-error">Ой! Такого товара нет в нашей аптеке :(</div>
+        </div>
+        <div class="user-actions">
+            <a href="#" id="login-btn" class="action-item">
+                <img src="user.svg" alt="">
+                <span>Войти</span>
+            </a>
+            <a href="cart.html" class="action-item" style="position: relative;">
+                <img src="cart.svg" alt="">
+                <span>Корзина</span>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    <div class="top-menu">
+        <a href="sale.html">Акции</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="#contacts">Контакты</a>
+    </div>
+    <div class="product-title-card">
+        <h2>Нурофен Экспресс Форте капсулы 400 мг 20 шт</h2>
+    </div>
+    <hr class="product-line">
+    <div class="product-info">
+        <img class="product-main-img" src="nurofen.svg" alt="Нурофен">
+    <div class="product-description">
+         <p>Форма выпуска: капсулы</p>
+         <p>Дозировка: 400 мг</p>
+         <p>Количество: 20 шт</p>
+         <p>Производитель: Патеон Софтджелс Б.В.</p>
+    </div>
+    <div class="buy-block">
+        <p class="buy-price">Цена: <span>358₽</span></p>
+        <button class="product-cart-btn" data-name="Нурофен" data-price="358">В корзину</button>
+    </div>
+    </div>
+     <div class="product-about">
+        <h2>Описание</h2>
+        <p>Нурофен Экспресс Форте применяется для временного облегчения боли различного происхождения, включая головную, зубную и мышечную боль. Также может использоваться для снижения температуры при простудных заболеваниях.</p>
+    </div>
+    <hr class="product-line">
+     <footer id="contacts">
+        <div class="footer-content nurofen">
+            <div class="footer-column">
+                <h4 class="footer-title">Покупателям</h4>
+                <a href="catalog.html">Каталог</a>
+                <a href="sale.html">Акции</a>
+                <a href="delivery.html">Доставка</a>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-title">Помощь</h4>
+                <a href="#contacts">Контакты</a>
+                <a href="policy.html">Политика конфиденциальности</a>
+                <a href="policy.html">Пользовательское соглашение</a>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Контакты</h4>
+                <p>+7 (999) 999-000</p>
+                <p>info@vitaline.ru</p>
+                <p>г. Киров, ул. Московская 136</p>
+            </div>
+        </div>
+        <p class="copyright">
+            © 2026 ВитаЛайн. Все права защищены.
+        </p>
+    </footer>
+     <div class="login-modal" id="login-modal">
+        <div class="login-window">
+            <button class="close-btn" id="close-btn">×</button>
+            <h2>Вход или регистрация</h2>
+            <input type="text" placeholder="Телефон">
+            <label class="checkbox-block">
+                <input type="checkbox">
+                Даю согласие на обработку персональных данных
+            </label>
+            <label class="checkbox-block">
+                <input type="checkbox">
+                Ознакомлен и соглашаюсь с политикой обработки персональных данных,политикой конфиденциальности и пользовательским соглашением
+            </label>
+            <button class="login-btn">
+                Войти
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

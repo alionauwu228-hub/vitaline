@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="container">
+        <a href="index.html" class="logo">ВитаЛайн</a>
+        <a href="catalog.html" class="catalog-btn">
+            <img src="Icon.svg" alt="">
+            Каталог
+        </a>
+        <div class="search-box">
+            <input class="search-input" type="text" placeholder="Введите название препарата..">
+            <img src="search.svg" alt="Поиск" id="search-btn">
+            <div id="search-error-badge" class="search-error">Ой! Такого товара нет в нашей аптеке :(</div>
+        </div>
+        <div class="user-actions">
+            <a href="#" id="login-btn" class="action-item">
+                <img src="user.svg" alt="">
+                <span>Войти</span>
+            </a>
+            <a href="#" class="action-item" style="position: relative;">
+                <img src="cart.svg" alt="">
+                <span>Корзина</span>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    <div class="top-menu">
+        <a href="sale.html">Акции</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="#contacts">Контакты</a>
+    </div>
+    <div class="cart-title">
+        <h1>Корзина</h1>
+    </div>
+    <div id="empty-cart">
+        <img class="cart-img" src="cartbig.svg" alt="Корзина">
+        <div class="cart-text">
+            <p>Кажется, ваша корзина пуста</p>
+            <p>Перейдите в каталог, чтобы выбрать необходимые товары!</p>
+        </div>
+        <a href="catalog.html" class="catalog-link">
+            Перейти в каталог
+        </a>
+    </div>
+    <div class="container">
+        <div id="filled-cart" class="cart-grid" style="display: none;">
+            <div class="cart-left-col">
+                <div class="cart-management">
+                    <button id="clear-cart-btn" class="cart-clear-btn">Очистить корзину</button>
+                </div>
+                <div id="cart-items-list">
+                </div>
+            </div>
+            <div class="cart-right-col">
+                <div class="summary-card">
+                    <h3>Условия заказа</h3>
+                    <div class="summary-row">
+                        <span id="summary-count">0 товара</span>
+                        <span id="summary-subtotal">0 ₽</span>
+                    </div>
+                    <div class="summary-row delivery-row">
+                        <span>Доставка</span>
+                        <span class="free-text">Бесплатно</span>
+                    </div>
+                    <hr class="summary-hr">
+                    <div class="summary-total-row">
+                        <span>Итого</span>
+                        <span id="summary-total-price">0 ₽</span>
+                    </div>
+                    <button class="cart-checkout-btn" onclick="alert('Заказ успешно оформлен!')">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="contacts">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4 class="footer-title">Покупателям</h4>
+                <a href="catalog.html">Каталог</a>
+                <a href="sale.html">Акции</a>
+                <a href="delivery.html">Доставка</a>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-title">Помощь</h4>
+                <a href="#contacts">Контакты</a>
+                <a href="policy.html">Политика конфиденциальности</a>
+                <a href="policy.html">Пользовательское соглашение</a>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Контакты</h4>
+                <p>+7 (999) 999-000</p>
+                <p>info@vitaline.ru</p>
+                <p>г. Киров, ул. Московская 136</p>
+            </div>
+        </div>
+        <p class="copyright">
+            © 2026 ВитаЛайн. Все права защищены.
+        </p>
+    </footer>
+    <div class="login-modal" id="login-modal">
+        <div class="login-window">
+            <button class="close-btn" id="close-btn">×</button>
+            <h2>Вход или регистрация</h2>
+            <input type="text" placeholder="Телефон">
+            <label class="checkbox-block">
+                <input type="checkbox">
+                Даю согласие на обработку персональных данных
+            </label>
+            <label class="checkbox-block">
+                <input type="checkbox">
+                Ознакомлен и соглашаюсь с политикой обработки персональных данных,политикой конфиденциальности и
+                пользовательским соглашением
+            </label>
+            <button class="login-btn">
+                Войти
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
